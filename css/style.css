@@ -1,0 +1,50 @@
+
+:root{
+    --primary: #fea116;
+    --light: #f1f8ff;
+    --dark: #0f172b;
+}
+
+
+/*HERO HEADER   */
+.hero-header{
+    background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(../img/bg-hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero-header img{
+    animation: imgRotate 50s linear infinite;
+}
+@keyframes imgRotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.btn{
+    font-family: 'nunito', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.btn-warning{
+    color: #fff;
+}
+
+
+/*  SERVICE ITEM   */
+.service-item{
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+}
+.service-item:hover{
+    background: var(--primary);
+}
+.service-item *{
+    transition: 0.5s;
+}
+.service-item:hover *{
+    color: var(--light) !important;
+}
